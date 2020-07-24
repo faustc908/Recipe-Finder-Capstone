@@ -38,6 +38,7 @@ import Recipe from './Recipe';
         <input className='search-bar' type='text' value={search} onChange={updateSearch}/>
         <button className='search-button' type='submit'/>
       </form>
+    <div className='recipes'>
     {recipes.map(recipe => (
    <Recipe
     key={recipe.recipe.label}
@@ -47,7 +48,8 @@ import Recipe from './Recipe';
     ingredients={recipe.recipe.ingredients}
     />
    ))}
-     </div>
+    </div>
+    </div>
    );
  }
 
