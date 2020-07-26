@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import './App.css';
 import Recipe from './Recipe';
 
- const app = () => {
+ const App = () => {
 
  const APP_ID = '7e817b93';
  const APP_KEY = 'dd1f3f5c93f40c501dd29392c73cbd2d';
