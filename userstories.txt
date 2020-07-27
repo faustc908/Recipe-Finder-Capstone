@@ -1,0 +1,10 @@
+-As a user I want to see clear directions of how to use the app --high
+-As a user I want a clean easy to use interface --medium
+-As a user I want to see many results for my searches --high
+-As a user I want to be able to visit the original websites with the cooking instructions --high
+-As a user I want to send feedback and or news tips/suggestions in a in a convenient way so I can stay in contact and communication with the site. --medium
+-As a user I want to be able to search for recipes using several parameters.  --high
+-As an accessibility user as a key-board user-only I want to navigate the website pages and activate elements on the page to have an easy and accessible experience. --high
+-As an accessiblity user - as a screen reader I want to be able to use the underlying accessibility of the site so that I can communicate page content,information about the type of elements so that I can effectively use and interact with the site. --high
+-As an Administrator  I want to be able to edit and maintain the site visually. --medium
+-As an Administrator  I want to be able to access the site stats.  -medium
