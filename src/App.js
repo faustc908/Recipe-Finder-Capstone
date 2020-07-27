@@ -1,27 +1,33 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
 import Recipe from './Recipe';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Appdesc from './components/Appdesc';
+
+// API call & State
 
  const App = () => {
-
- const APP_ID = '7e817b93';
- const APP_KEY = 'dd1f3f5c93f40c501dd29392c73cbd2d';
+    const APP_ID = '7e817b93';
+    const APP_KEY = 'dd1f3f5c93f40c501dd29392c73cbd2d';
   
- const [recipes, setRecipes] = useState([]);
- const [search, setSearch] = useState('');
- const [query, setQuery] = setState('chicken');
+    const [recipes, setRecipes] = useState([]);
+    const [search, setSearch] = useState('');
+    const [query, setQuery] = useState('banana');
 
  useEffect(() => {
     getRecipes();
  }, [query]);
 
  const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`);
-    const data = response.json();
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const data = await response.json();
     setRecipes(data.hits);
     console.log(data.hits);
  };
-  
+ 
+ // Updating Search and Search
+
   const updateSearch = e => {
   setSearch(e.target.value);
   };
@@ -32,13 +38,25 @@ import Recipe from './Recipe';
   setSearch('');
   }
 
+  // Render
+
    return(
-     <div className='app'>
-      <form onSubmit={getSearch} className='search-form'>
-        <input className='search-bar' type='text' value={search} onChange={updateSearch}/>
-        <button className='search-button' type='submit'/>
-      </form>
-      <div className='recipes'>
+     <div className='App'>
+     <NavBar />
+     <Appdesc />
+     <form onSubmit={getSearch} className='search-form'>
+        <input 
+        className='search-bar' 
+        type='text' 
+        placeholder='Banana'
+        value={search} 
+        onChange={updateSearch}
+       required/>
+       <button className='search-button' type='submit'>
+        Search
+       </button>
+     </form>
+      <div className='recipes' >
       {recipes.map(recipe => (
        <Recipe
        key={recipe.recipe.label}
@@ -46,11 +64,14 @@ import Recipe from './Recipe';
        calories={recipe.recipe.calories}
        image={recipe.recipe.image}
        ingredients={recipe.recipe.ingredients}
+       url={recipe.recipe.url}
      />
     ))}
-    </div>
+      </div>
+       <div>
+        <Footer />
+       </div>
      </div>
-   );
- }
+   )}
 
 export default App;

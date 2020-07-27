@@ -1,0 +1,18 @@
+.navbar{
+    padding: 5px;
+    font-size: 25px;
+    background-color:rgb(135, 137, 248);
+    font-family: sans-serif;
+    height: 10vh;
+    color: white;
+}
+
+.texta{
+    float:left;
+}
+
+.textb{
+    text-align: right;
+    float:right;
+    font-style: italic;
+}
