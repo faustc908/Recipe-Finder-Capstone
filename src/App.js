@@ -1,9 +1,9 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
-import Recipe from './Recipe';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import Appdesc from './components/Appdesc';
+import Recipe from './components/Recipe/Recipe';
+import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
+import Appdesc from './components/Appdesc/Appdesc';
 
 // API call & State
 
@@ -42,19 +42,20 @@ import Appdesc from './components/Appdesc';
 
    return(
      <div className='App'>
-     <NavBar />
-     <Appdesc />
-     <form onSubmit={getSearch} className='search-form'>
-        <input 
-        className='search-bar' 
-        type='text' 
-        placeholder='Banana'
-        value={search} 
-        onChange={updateSearch}
-       required/>
-       <button className='search-button' type='submit'>
+      <NavBar />
+      <Appdesc />
+      <p className='formHead'>Please enter an ingredient:</p>
+         <form onSubmit={getSearch} className='search-form'>
+         <input 
+         className='search-bar' 
+         type='text' 
+         placeholder='Banana'
+         value={search} 
+         onChange={updateSearch}
+         required/>
+      <button className='search-button' type='submit'>
         Search
-       </button>
+      </button>
      </form>
       <div className='recipes' >
       {recipes.map(recipe => (

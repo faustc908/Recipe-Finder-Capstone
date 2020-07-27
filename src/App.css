@@ -9,11 +9,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
-  padding-top: 25px;
 }
 
 .search-bar{
-  width: 30%;
+  width: 20%;
   border: none;
   padding: 10px;
   border-radius: 20px;
@@ -21,7 +20,7 @@
 }
 
 .search-button{
-  background: rgb(3, 73, 94);
+  background: rgb(45, 48, 245);
   border: none;
   padding: 10px 40px;
   color: white;
@@ -39,4 +38,11 @@
   display:flex;
   justify-content:space-around;
   flex-wrap: wrap;
+}
+
+.formHead{
+  padding-right: 20px;
+  font-size: 23px;
+  padding-top: 10px;
+  text-align:center;
 }

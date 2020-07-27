@@ -7,7 +7,7 @@ class Footer extends React.Component {
       <div className='footer'>
           <p>©Colin Faust 2020</p>
           <p> Powered by 
-          <a href='https://developer.edamam.com/' target='_blank' className='link'>Edamam</a></p>
+          <a href='https://developer.edamam.com/' target='_blank' rel="noopener noreferrer" className='link'>Edamam</a></p>
       </div>
       )}
   }

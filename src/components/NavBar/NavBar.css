@@ -1,0 +1,27 @@
+.navbar{
+    padding: 5px;
+    font-size: 25px;
+    background-color:rgb(45, 48, 245);
+    font-family: sans-serif;
+    height: 10vh;
+    color: rgb(177, 245, 245);
+}
+
+.texta{
+    float:left;
+    text-shadow: 2px 2px #3a3939;
+}
+
+.textb{
+    text-align: right;
+    float:right;
+    font-style: italic;
+    text-shadow: 2px 2px #3a3939;
+}
+
+.favicon{
+    height: 60px;
+    width: 60px;
+    float: left;
+    
+}
