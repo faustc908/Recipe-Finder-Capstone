@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css';
 
+//Footer with link to API
+
 class Footer extends React.Component {
     render() {
       return (

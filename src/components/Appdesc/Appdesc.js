@@ -1,6 +1,8 @@
 import React from 'react';
 import './Appdesc.css';
 
+//Banner image and description of application
+
 class Appdesc extends React.Component {
     render() {
       return (

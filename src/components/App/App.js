@@ -1,9 +1,9 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
-import Recipe from './components/Recipe/Recipe';
-import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
-import Appdesc from './components/Appdesc/Appdesc';
+import Recipe from '../Recipe/Recipe';
+import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
+import Appdesc from '../Appdesc/Appdesc';
 
 // API call & State
 

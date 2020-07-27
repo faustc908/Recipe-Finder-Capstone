@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavBar.css';
 
+//Add favicon
+
 class NavBar extends React.Component {
     render() {
       return (
