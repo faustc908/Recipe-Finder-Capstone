@@ -7,6 +7,7 @@ wanting to expand their tastebuds.
 Technologies used to build app: 
 
 Client: React.js/CSS3/HTML5/jest
+
 Server: Node.js/Express/Postgresql/jest/supertest
 
 
