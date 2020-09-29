@@ -4,8 +4,6 @@ Tired of the same old meals everyday?  GoodEats allows you to enter an ingredien
 It also allows you to upload your own favorite recipes to share with the world.  This is an app for foodies and people 
 wanting to expand their tastebuds.
 
-Technologies used to build app: 
-
 Client: React.js/CSS3/HTML5/jest
 
 Server: Node.js/Express/Postgresql/jest/supertest
