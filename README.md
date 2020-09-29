@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GoodEats Recipe Finder
+
+Tired of the same old meals everyday?  GoodEats allows you to enter an ingredient and gives you a list of delicious meals.
+It also allows you to upload your own favorite recipes to share with the world.  This is an app for foodies and people 
+wanting to expand their tastebuds.
+
+Technologies used to build app: 
+
+Client: React.js/CSS3/HTML5/jest
+Server: Node.js/Express/Postgresql/jest/supertest
+
 
 ## Available Scripts
 
